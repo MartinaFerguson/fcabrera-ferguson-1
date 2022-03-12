@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+    font-family:'Cinzel', serif;
+    text-align: center;
+    
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 150px auto 150px;
+        grid-template-areas: 
+        "header header header" 
+        "main main main" 
+        "content content content" 
+        "footer footer footer";
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    
+    .header{
+        height: 80px;
+        width: 100%;
+        grid-area: header;
+        line-height: 30px;
+        color: black;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .nav-menu{
+        display: flex;
+        list-style: none;
+
+    }
+
+    
+    .nav-menu-item{
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 80px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 3px;
+
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        max-width: 992px;
+        margin: 0 auto;
+
+    }
+    .nav-menu-link:hover{
+        background-color:rgba(243, 84, 56, 0.877);
+        transition: 0.5s;
+
+    }
+    .nav-toggle{
+        color: black;
+        background: none;
+        border: none;
+        font-size: 20px;
+        padding: 0 20px;
+        line-height: 40px;
+
+        display: none;
+
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 90px;
+        letter-spacing: 5px;
+    }
+
+    h2{
+        font-size: 60px;
+        line-height: 15px;
+        letter-spacing: 2px;
+    }
+
+    main{
+        grid-area: main;
+        border: 1px solid black;
+        color: black;
+    
+    }
+    .texto{
+        grid-area: content;
+        border: 1px solid black;
+        padding: 10px;
+    
+    
+    }
+
+    
+    div p{
+        text-align: center;
+        justify-content: space-between;
+        line-height: 15px;
+    }
+    
+    
+    
+    footer{
+        grid-area: footer;
+        justify-content: center;
+        line-height: 100px;
+        border: 1px solid black;
+        color: black;
+    
+    }
+    
+
+    .imagenes{
+        justify-content: center;
+        display: flex;
+        flex: row;
+        margin: 10px;
+        justify-content: space-between;
+        justify-content: space-around;
+    
+    }
+    .imagenes div{
+        border: 1px solid black;
+    
+    }
+    
+    .red-social a{
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        width: 60px;
+        height: 50px;
+        color: black;
+        text-decoration: none;
+        text-decoration-style: none;
+        justify-content: space-between;
+    
+    }
+
+    .img-digitalart{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+        justify-content: space-between;
+        justify-content: space-around;
+
+    }
+
+    .img-digitalart div img{
+        margin-top: 10px;
+        justify-content: space-between; 
+        justify-content: center;
+        justify-content: space-around;
+    }
+    
+    
+    
+    /*Media Queries*/
+    
+    @media (max-width: 768px){
+
+        .header{
+            height: 400px;
+        }
+    
+        .nav-menu{
+            flex-direction: column;
+            background-color: rgba(172, 39, 39, 0.733);
+            width: 100%;
+            padding: 20px 0;
+            left: 100%;
+
+        }
+        .nav-menu-item{
+            line-height: 70px;
+
+        }
+    
+        .nav-menu-link:hover,
+        .nav-menu-link_active{
+            background:none;
+            color: rgba(31, 8, 8, 0.733);
+        }
+        
+        .nav-menu_visible{
+            left: 0
+        }
+
+        .imagenes{
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            margin: 10px;
+        }
+
+    }
