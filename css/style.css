@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: coral;
+    background:  linear-gradient(to top, rgb(151, 55, 55), rgb(243, 144, 144));
     font-family:'Cinzel', serif;
     text-align: center;
     
